@@ -47,3 +47,5 @@ void loop() {
     if (data == 'D') digitalWrite(9, LOW);
   }
 }
+click here to watch the demo:
+https://drive.google.com/drive/folders/19TJzoeqNpqbprV4Grxroh4r2ZOSSL4m8?usp=drive_link
