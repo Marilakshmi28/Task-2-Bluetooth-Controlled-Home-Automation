@@ -1,0 +1,18 @@
+char data = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(8, OUTPUT);  // LED 1
+  pinMode(9, OUTPUT);  // LED 2
+}
+
+void loop() {
+  if (Serial.available()) {
+    data = Serial.read();
+
+    if (data == 'A') digitalWrite(8, HIGH);  // LED1 ON
+    if (data == 'B') digitalWrite(8, LOW);   // LED1 OFF
+    if (data == 'C') digitalWrite(9, HIGH);  // LED2 ON
+    if (data == 'D') digitalWrite(9, LOW);   // LED2 OFF
+  }
+}
