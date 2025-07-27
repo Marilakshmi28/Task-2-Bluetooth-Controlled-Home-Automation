@@ -29,23 +29,6 @@ The user types commands in the Serial Monitor (like Bluetooth input):
 `C` Turn ON LED2 
 `D` Turn OFF LED2 
 
-Arduino Code:
-char data = 0;
 
-void setup() {
-  Serial.begin(9600);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-}
-
-void loop() {
-  if (Serial.available()) {
-    data = Serial.read();
-    if (data == 'A') digitalWrite(8, HIGH);
-    if (data == 'B') digitalWrite(8, LOW);
-    if (data == 'C') digitalWrite(9, HIGH);
-    if (data == 'D') digitalWrite(9, LOW);
-  }
-}
 click here to watch the demo:
 https://drive.google.com/drive/folders/19TJzoeqNpqbprV4Grxroh4r2ZOSSL4m8?usp=drive_link
